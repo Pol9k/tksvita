@@ -704,8 +704,8 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 /* TOWN1s */
 .town__block {
-    height: 300px;
     width: 100%;
+    padding: 6rem 3rem;
 }
 .town__block-title{
     display: flex;
@@ -713,13 +713,55 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 .town__block-title i {
     font-size: 6rem;
-    margin: 0 3rem;
+    color: #164863;
 }
 .town__block-title h2 {
     font-size: 48px;
     font-weight: 600;
+    color: #164863;
 }
 
 .town__block-address{
     background-color: #164863;
+    display: flex;
+}
+.town--address {
+    display: flex;
+}
+.town__block-address{
+    color: #DDF2FD;
+}
+.town__block-address--i {
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+.town__block-address--text {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding-bottom: .5rem;
+}
+
+.town__block-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.town__block-map iframe{
+    width: 550px; 
+    height: 300px;
+}
+
+
+
+
+@media (max-width: 525px) {
+    .town__block-title i {
+        font-size: 3rem;
+        color: #164863;
+    }
+    .town__block-title h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #164863;
+    }
 }
