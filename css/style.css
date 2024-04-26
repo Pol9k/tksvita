@@ -699,3 +699,27 @@ font-family: 'Roboto Condensed', sans-serif; */
         margin: 3rem 0;
     }
 }
+
+
+
+/* TOWN1s */
+.town__block {
+    height: 300px;
+    width: 100%;
+}
+.town__block-title{
+    display: flex;
+    align-items: center;
+}
+.town__block-title i {
+    font-size: 6rem;
+    margin: 0 3rem;
+}
+.town__block-title h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.town__block-address{
+    background-color: #164863;
+}
