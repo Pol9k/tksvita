@@ -707,6 +707,9 @@ font-family: 'Roboto Condensed', sans-serif; */
     width: 100%;
     padding: 6rem 3rem;
 }
+.town__block-inner{
+    padding: 6rem 3rem;
+}
 .town__block-title{
     display: flex;
     align-items: center;
@@ -721,7 +724,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     color: #164863;
 }
 
-.town__block-address{
+.town__block-address, .town--address{
     background-color: #164863;
     display: flex;
 }
