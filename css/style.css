@@ -393,19 +393,46 @@ font-family: 'Roboto Condensed', sans-serif; */
     padding: 0 3rem;
 }
 .reviews__item{
+    position: relative;
     width: 150px;
-    padding: 4rem 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     text-align: center;
+}
+/* .reviews__item::after {
+    content: '';
+    position: absolute;
+    top: -0.2rem;
+    left: -.5rem;
+    width: 2rem;
+    height: 0.1rem;
+    background-color: #74E291;
+    z-index: 1;
+} */
+.reviews__item::before {
+    content: '';
+    position: absolute;
+    top: -.5rem;
+    left: -.2rem;
+    width: 0.1rem;
+    height: 6rem;
+    background-color: #74E291;
+    z-index: 1;
 }
 
 .reviews__item span{
     color: aqua;
     margin-top: 2rem;
+    transition: all .5s linear;
+}
+.reviews__item:hover span{
+    color: #74E291;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /* !!!!!!!!!!!!!! */
@@ -569,6 +596,14 @@ font-family: 'Roboto Condensed', sans-serif; */
     .footer .menu {
         display: none;
     }
+
+    .reviews__inner{
+        display: grid;
+        grid-column-gap: .5em;
+        grid-row-gap: 3em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 @media (max-width: 860px){
     .header {
@@ -613,6 +648,9 @@ font-family: 'Roboto Condensed', sans-serif; */
     .rent__items {
         /* grid-template-columns: repeat(auto, 1fr); */
         grid-template-columns: none;
+    }
+    .reviews__inner{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 625px){
@@ -670,7 +708,9 @@ font-family: 'Roboto Condensed', sans-serif; */
     .footer {
         padding: 3rem 0 1.4rem;
     }
-    
+    .reviews__inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media (max-width: 525px) {
     .footer__top {
@@ -703,6 +743,9 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 
 /* TOWN1s */
+.body__town{
+    background-color: #e3e7e9;
+}
 .town__block {
     width: 100%;
     padding: 6rem 3rem;
@@ -724,16 +767,23 @@ font-family: 'Roboto Condensed', sans-serif; */
     color: #164863;
 }
 
-.town__block-address, .town--address{
+.town__block-address{
     background-color: #164863;
     display: flex;
+    position: relative;
+}
+.address__company-name {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    font-size: 1rem;
+    color: #acaaaa;
 }
 .town--address {
     display: flex;
-}
-.town__block-address{
     color: #DDF2FD;
 }
+
 .town__block-address--i {
     margin-right: 2rem;
     font-size: 2rem;
