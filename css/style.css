@@ -243,6 +243,44 @@ font-family: 'Roboto Condensed', sans-serif; */
 .certification__text-second h4{
     margin-bottom: 1rem;
 }
+/* SECTION SEARCH*/
+.search {
+    padding: 10rem 0;
+    background-color: #164863;
+}
+.search__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.search__title {
+    color: #fefefe;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+}
+
+.search__button {
+    min-width: 20rem;
+    height: 6rem;
+    border-bottom: 1px solid #fefefe;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+.search__button-text {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: -4rem;
+    color: #fefefe;
+}
+/* .button {
+    transform: scale(2);
+} */
+
 /* SECTION RENT */
 .rent {
     padding: 10rem 0;
